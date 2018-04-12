@@ -1,7 +1,7 @@
 class Curriculum < ApplicationRecord
   # relationships
   has_many :camps
-  
+
   # validations
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   ratings_array = [0] + (100..3000).to_a

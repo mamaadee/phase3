@@ -10,6 +10,7 @@
       <%= f.input :end_date, label_html: { class: 'active' } %>
       <%= f.input :max_students, label_html: { class: 'active' } %>
       <%= f.input :active %>
+	  <%# f.input :active, as: :radio_buttons %>
     </div>
   </div>
   <div class="row">
@@ -18,3 +19,10 @@
     </div>
   </div>
 <% end %>
+
+
+  <!--times = @camp.time_slot == "am" ? [["Morning", "am"], ["Afternoon", "pm"]] : [["Afternoon", "pm"], ["Morning", "am"]]
+      <%# f.select :time_slot, times, :prompt => "Select Time of Day..." %>-->
+
+      
+      
