@@ -18,7 +18,6 @@ class Curriculum < ApplicationRecord
 
   private
   def max_rating_greater_than_min_rating
-    # only testing 'greater than' in this method, so...
     return true if self.max_rating.nil? || self.min_rating.nil?
     unless self.max_rating > self.min_rating
       errors.add(:max_rating, "must be greater than the minimum rating")
